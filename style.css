@@ -1,0 +1,24 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:"Poppins",san-serif;
+
+}
+body{
+    background: color #f4c531; ;
+}
+
+.wrapper{
+    box-sizing: border-box;
+    width: 26.875rem;
+    padding: 2.5em 3em;
+    background-color:#ffffff;
+    position: absolute;
+    transform:translate(-50%,-50);
+    left: 50%;
+    top: 50%;
+    border-radius: 0.6em;
+    box-shadow: 0.0.9em 2.8em rgb(86,66,0,0.2);
+
+}
