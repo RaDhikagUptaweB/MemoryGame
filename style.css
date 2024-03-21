@@ -76,3 +76,17 @@
     height: 100%;
     background-color: #f4c531;
     top: 0;
+  }
+  .hide {
+    display: none;
+  }
+  #result {
+    text-align: center;
+  }
+  #result h2 {
+    font-size: 2.5em;
+  }
+  #result h4 {
+    font-size: 1.8em;
+    margin: 0.6em 0 1em 0;
+  }
