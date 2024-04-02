@@ -126,7 +126,8 @@ const matrixGenerator = (cardValues, size = 4) => {
           }
         }
       });
-    });
+      });
+    };
     //Start game
 startButton.addEventListener("click", () => {
   movesCount = 0;
@@ -142,3 +143,21 @@ startButton.addEventListener("click", () => {
   moves.innerHTML = `<span>Moves:</span> ${movesCount}`;
   initializer();
 });
+//Stop game
+stopButton.addEventListener(
+  "click",
+  (stopGame = () => {
+    controls.classList.remove("hide");
+    stopButton.classList.add("hide");
+    startButton.classList.remove("hide");
+    clearInterval(interval);
+  })
+);
+//Initialize values and func calls
+const initializer = () => {
+  result.innerText = "";
+  winCount = 0;
+  let cardValues = generateRandom();
+  console.log(cardValues);
+  matrixGenerator(cardValues);
+};
